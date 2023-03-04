@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/icono.min.css">
+  <link rel="stylesheet" href="css/owfont-regular.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="audio-player">
+      <div class="player controls">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+
+        <div class="track-name"></div>
+
+        <div class="tracking-of-time">
+          <div class="timeline">
+            <div class="progress"></div>
+          </div>
+
+          <div class="track-time">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length"></div>
+          </div>
+        </div>
+
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume icono-volumeMedium"></div>
+          </div>
+
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+      </div>
+
+      <ul class="play-list"></ul>
+      </div>
+    </div>
+
+    <div class="lang-and-todolist">
+      <div class="languages">
+        <ul class="languages-list">
+          <li class="languages-item lang-en lang-active">Eng</li>
+          <li class="languages-item lang-ru">Ru</li>
+        </ul>
+      </div>
+
+      <div class="container todolist">
+        <h3 class="todo-header">Todo-list</h3>
+
+        <form class="todo-form">
+          <input type="text" class="todo-input" placeholder="Add a new task">
+          <button class="add-button">Add</button>
+        </form>
+
+        <ul class="todo-items"></ul>
+      </div>
+    </div>
+
+    <div class="weather">
+      <input type="text" class="city" value="Minsk" placeholder="City">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="quotes">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="credits">
+      <div class="github">
+        <a href="https://github.com/penguin-one" class="github-link">Github</a>
+        <span class="year">2023</span>
+      </div>
+
+      <div class="settings">
+        <h3 class="settings-header">Settings</h3>
+        <div class="settings-details">
+          <form class="settings-form">
+            <button type="button" class="close-btn">X</button>
+            <h4 class="settings-list-header">Select items you want to hide:</h4>
+            <ul class="settings-list">
+              <li class="settings-item">
+                <input type="checkbox" value="audio-player" class="settings-checkbox"> <span class="span-audioplayer">Audio player</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="todo-list" class="settings-checkbox"> <span class="span-todolist">Todo-list</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="weather-forecast" class="settings-checkbox"> <span class="span-weather">Weather forecast</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="time" class="settings-checkbox"> <span class="span-time">Time</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="date" class="settings-checkbox"> <span class="span-date">Date</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="greeting" class="settings-checkbox"> <span class="span-greeting">Greeting</span>
+              </li>
+              <li class="settings-item">
+                <input type="checkbox" value="quotes" class="settings-checkbox"> <span class="span-quotes">Quotes</span>
+              </li>
+            </ul>
+            <div class="settings-buttons">
+              <button type="reset" class="reset-btn">Reset</button>
+              <button class="save-btn">Save</button>
+            </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="course">
+        <a href="https://rs.school/js/" class="course-link"><img src="https://rs.school/images/rs_school_js.svg" alt="rs school js"></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
